@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragebogen - Phishing Assessment</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- Header -->
+                <header class="py-4 border-bottom mb-4">
+                    <h1 class="h2" id="app-title">Fragebogen - Phishing Assessment</h1>
+                </header>
+
+                <!-- Allgemeine Einstellungen -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <button class="btn btn-link text-decoration-none w-100 text-start d-flex justify-content-between align-items-center" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#settingsCollapse">
+                            <span class="fw-bold" data-lang-key="settings_title">Allgemeine Einstellungen</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="collapse show" id="settingsCollapse">
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <!-- Sprachauswahl -->
+                                <div class="col-md-4">
+                                    <label for="languageSelect" class="form-label" data-lang-key="language_label">Sprache</label>
+                                    <select class="form-select" id="languageSelect">
+                                        <!-- Wird dynamisch gefüllt -->
+                                    </select>
+                                </div>
+                                
+                                <!-- Organisationseinheit -->
+                                <div class="col-md-4">
+                                    <label for="orgSelect" class="form-label" data-lang-key="org_label">Organisationseinheit</label>
+                                    <select class="form-select" id="orgSelect" required>
+                                        <option value="" data-lang-key="select_org">Bitte wählen...</option>
+                                        <!-- Wird dynamisch gefüllt -->
+                                    </select>
+                                </div>
+                                
+                                <!-- Standort -->
+                                <div class="col-md-4">
+                                    <label for="locationSelect" class="form-label" data-lang-key="location_label">Standort</label>
+                                    <select class="form-select" id="locationSelect" required disabled>
+                                        <option value="" data-lang-key="select_location">Zuerst Organisationseinheit wählen</option>
+                                        <!-- Wird dynamisch gefüllt -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fragebogen -->
+                <div id="questionnaireContainer">
+                    <!-- Wird dynamisch gefüllt -->
+                </div>
+
+                <!-- Sticky Save Button -->
+                <div class="sticky-save-container">
+                    <button class="btn btn-primary btn-lg" id="saveButton">
+                        <i class="bi bi-save me-2"></i>
+                        <span data-lang-key="save_button">Speichern</span>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-lg ms-2" id="loadButton">
+                        <i class="bi bi-folder-open me-2"></i>
+                        <span data-lang-key="load_button">Laden</span>
+                    </button>
+                </div>
+
+                <!-- Toast für Benachrichtigungen -->
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="saveToast" class="toast" role="alert">
+                        <div class="toast-header">
+                            <strong class="me-auto" data-lang-key="notification">Benachrichtigung</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body" id="toastMessage">
+                            <!-- Nachricht wird dynamisch eingefügt -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal zum Laden von Speicherständen -->
+                <div class="modal fade" id="loadModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" data-lang-key="load_modal_title">Gespeicherte Fragebögen</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="savesList">
+                                    <!-- Wird dynamisch gefüllt -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/language.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ratings.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fragebogen.js') }}"></script>
+</body>
+</html>

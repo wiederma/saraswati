@@ -1,0 +1,178 @@
+{
+  "organisationseinheiten": [
+    {
+      "id": "emea",
+      "name": "EMEA Region",
+      "standorte": [
+        {
+          "id": "DE-A3F12",
+          "name": "Freiburg"
+        },
+        {
+          "id": "DE-B7E4A",
+          "name": "Heidelberg"
+        },
+        {
+          "id": "DE-C92D1",
+          "name": "Regensburg"
+        },
+        {
+          "id": "DE-D1F8B",
+          "name": "Potsdam"
+        },
+        {
+          "id": "DE-E4C23",
+          "name": "Lübeck"
+        },
+        {
+          "id": "PL-1A5C2",
+          "name": "Gdańsk"
+        },
+        {
+          "id": "PL-2B8F7",
+          "name": "Wrocław"
+        },
+        {
+          "id": "PL-3C1D9",
+          "name": "Poznań"
+        },
+        {
+          "id": "CZ-4D7A3",
+          "name": "Brno"
+        },
+        {
+          "id": "CZ-5E2B8",
+          "name": "Plzeň"
+        },
+        {
+          "id": "HU-6F9C1",
+          "name": "Debrecen"
+        },
+        {
+          "id": "HU-7A4E6",
+          "name": "Szeged"
+        },
+        {
+          "id": "RO-8B3F2",
+          "name": "Cluj-Napoca"
+        },
+        {
+          "id": "RO-9C8A7",
+          "name": "Timișoara"
+        }
+      ]
+    },
+    {
+      "id": "americas",
+      "name": "Americas Region",
+      "standorte": [
+        {
+          "id": "US-1F7B3",
+          "name": "Austin"
+        },
+        {
+          "id": "US-2A9C8",
+          "name": "Portland"
+        },
+        {
+          "id": "US-3D4E1",
+          "name": "Nashville"
+        },
+        {
+          "id": "US-4B8F6",
+          "name": "Raleigh"
+        },
+        {
+          "id": "US-5C2A9",
+          "name": "Salt Lake City"
+        },
+        {
+          "id": "US-6E7D4",
+          "name": "Pittsburgh"
+        },
+        {
+          "id": "US-7F1B8",
+          "name": "Minneapolis"
+        },
+        {
+          "id": "US-8A6C3",
+          "name": "Tampa"
+        }
+      ]
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate Functions",
+      "standorte": [
+        {
+          "id": "DE-F1A2B",
+          "name": "Frankfurt (HQ)"
+        },
+        {
+          "id": "US-A9F3C",
+          "name": "New York (HQ)"
+        }
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing & Production",
+      "standorte": [
+        {
+          "id": "DE-3B7F9",
+          "name": "Ingolstadt"
+        },
+        {
+          "id": "PL-C4D8E",
+          "name": "Katowice"
+        },
+        {
+          "id": "CZ-E7A2F",
+          "name": "Ostrava"
+        },
+        {
+          "id": "RO-B9C1D",
+          "name": "Brașov"
+        },
+        {
+          "id": "US-D2E5A",
+          "name": "Detroit"
+        },
+        {
+          "id": "US-F8B3C",
+          "name": "Charlotte"
+        }
+      ]
+    },
+    {
+      "id": "rd",
+      "name": "Research & Development",
+      "standorte": [
+        {
+          "id": "DE-2C9E7",
+          "name": "Karlsruhe"
+        },
+        {
+          "id": "DE-8F4A1",
+          "name": "Aachen"
+        },
+        {
+          "id": "PL-A3B6D",
+          "name": "Kraków"
+        },
+        {
+          "id": "CZ-7E9C2",
+          "name": "Prague"
+        },
+        {
+          "id": "US-C1F8B",
+          "name": "San Diego"
+        },
+        {
+          "id": "US-9D7A4",
+          "name": "Cambridge"
+        }
+      ]
+    }
+  ]
+}

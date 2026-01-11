@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Flask
+instance/
+.webassets-cache
+
+# Gespeicherte Antworten (optional - auskommentieren wenn diese eingecheckt werden sollen)
+data/responses/*.json
+
+# Logs
+*.log
+*.pot
+
+# Umgebungsvariablen
+.env
+.env.local
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Backup-Dateien
+*.bak
+*.tmp

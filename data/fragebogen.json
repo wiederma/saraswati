@@ -1,0 +1,73 @@
+{
+  "languages": ["de", "en"],
+  "title": {
+    "de": "Bewertungsbogen – Phishing-Erkennung & Erstreaktion",
+    "en": "Assessment Form – Phishing Detection & Initial Response"
+  },
+  "categories": [
+    {
+      "id": "phishing_assessment",
+      "name": {
+        "de": "Phishing-Bewertung",
+        "en": "Phishing Assessment"
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "text": {
+            "de": "Erkennung von Phishing-Merkmalen",
+            "en": "Identification of phishing indicators"
+          },
+          "description": {
+            "de": "In welchem Maß hat der Teilnehmer relevante Indikatoren einer Phishing-Mail korrekt identifiziert und benannt? (Bewertung z. B. anhand von Absender, Links, Sprache, Kontext, Auffälligkeiten)",
+            "en": "To what extent did the participant correctly identify and articulate relevant indicators of a phishing email? (e.g. sender anomalies, suspicious links, language, context, red flags)"
+          }
+        },
+        {
+          "id": "q2",
+          "text": {
+            "de": "Angemessenheit der Erstreaktion",
+            "en": "Appropriateness of the initial response"
+          },
+          "description": {
+            "de": "Wie angemessen und sicher waren die initialen Reaktionsmaßnahmen des Teilnehmers nach Erkennung der verdächtigen E-Mail? (z. B. kein Klicken, kein Antworten, sachgerechtes Melden, Vermeidung weiterer Verbreitung)",
+            "en": "How appropriate and secure were the participant's initial response actions after identifying the suspicious email? (e.g. no interaction with links or attachments, no reply, proper reporting, avoidance of further spread)"
+          }
+        },
+        {
+          "id": "q3",
+          "text": {
+            "de": "Einhaltung interner Melde- und Eskalationsprozesse",
+            "en": "Adherence to internal reporting and escalation procedures"
+          },
+          "description": {
+            "de": "In welchem Maß wurden die vorgesehenen internen Meldewege und Eskalationsmechanismen korrekt und zeitnah genutzt? (z. B. Security-Team, IT, Ticket-System, definierte Kommunikationskanäle)",
+            "en": "To what extent were the defined internal reporting and escalation procedures followed correctly and in a timely manner? (e.g. security team, IT, ticketing system, designated communication channels)"
+          }
+        },
+        {
+          "id": "q4",
+          "text": {
+            "de": "Einschätzung potenzieller Auswirkungen",
+            "en": "Assessment of potential impact"
+          },
+          "description": {
+            "de": "Wie realistisch und vollständig hat der Teilnehmer mögliche Auswirkungen eines erfolgreichen Phishing-Angriffs eingeschätzt? (z. B. Credential Compromise, Account-Missbrauch, weitere Ausbreitung, Datenverlust)",
+            "en": "How realistically and comprehensively did the participant assess the potential impact of a successful phishing attack? (e.g. credential compromise, account misuse, lateral movement, data loss)"
+          }
+        },
+        {
+          "id": "q5",
+          "text": {
+            "de": "Situationsbewusstsein & Informationsbedarf",
+            "en": "Situational awareness and identification of information needs"
+          },
+          "description": {
+            "de": "Wie gut hat der Teilnehmer erkannt, welche zusätzlichen Informationen zur Bewertung des Vorfalls erforderlich wären? (z. B. weitere betroffene Nutzer, ähnliche Vorfälle, technische Indikatoren, Logs)",
+            "en": "How well did the participant recognize which additional information would be required to properly assess the scope and severity of the incident? (e.g. additional affected users, similar reports, technical indicators, logs)"
+          }
+        }
+      ]
+    }
+  ]
+}

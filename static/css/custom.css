@@ -1,0 +1,239 @@
+/* Allgemeine Styles */
+body {
+    padding-bottom: 100px; /* Platz für Sticky Button */
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+/* Star Rating */
+.star-rating {
+    display: inline-flex;
+    gap: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star {
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.star:hover,
+.star.hover {
+    color: #ffb300;
+}
+
+/* Questions Grid Layout */
+.questions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+    .questions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Question Card Styling */
+.question-card {
+    transition: box-shadow 0.3s;
+    border-left: 4px solid #0d6efd;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Category Accordion */
+.accordion-item {
+    margin-bottom: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+}
+
+/* Sticky Save Button */
+.sticky-save-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.sticky-save-container button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sticky-save-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-save-container button:active {
+    transform: translateY(0);
+}
+
+/* Comment Textarea */
+.comment-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Toast Styling */
+.toast {
+    min-width: 300px;
+}
+
+.toast-success {
+    border-left: 4px solid #28a745;
+}
+
+.toast-error {
+    border-left: 4px solid #dc3545;
+}
+
+/* Modal Saves List */
+.save-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.save-item:hover {
+    background-color: #f8f9fa;
+    border-color: #0d6efd;
+}
+
+.save-item-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.save-item-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Loading Spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-save-container {
+        bottom: 10px;
+        right: 10px;
+        flex-direction: column;
+    }
+    
+    .sticky-save-container button {
+        width: auto;
+    }
+    
+    .star-rating {
+        font-size: 1.5rem;
+    }
+    
+    .questions-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Settings Card */
+#settingsCollapse .card-body {
+    background-color: #f8f9fa;
+}
+
+/* Category Headers */
+.category-header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Question Number Badge */
+.question-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Rating Display */
+.rating-display {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.rating-value {
+    font-weight: bold;
+    color: #0d6efd;
+}
